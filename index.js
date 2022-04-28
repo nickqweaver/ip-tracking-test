@@ -31,11 +31,6 @@ app.get("/my-ip", (req, res) => {
     </div>
   `
   return res.send(template)
-  res.send("Express built in req.ip:")
-  res.send(req.ip)
-  res.send("Parse x-forwarded-for header")
-  res.send(parseIp(req))
-  res.send("3rd party ipWare lib")
 })
 
 app.listen(port, () => {
